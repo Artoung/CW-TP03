@@ -163,7 +163,7 @@ class Jeu extends Sujet
 	 */
 	ajouterPampmousseMutant()
 	{
-		//A faire : question 1
+		this.ajouterElement(this._fabriqueElement.create('pampmousse mutant'));
 	}
 
 	/**

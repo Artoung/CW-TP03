@@ -10,5 +10,6 @@ class PampmousseMutant extends ElementMobile
 	constructor()
 	{
 		super();
+		this.ajouterTexture(pampmousseTexture1);
 	}
 }

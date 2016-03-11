@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clients riches - TP 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+<body>
+  <div class="header">
+    <p>TP 3 - L'attaque des</p>
+    <p class="bigger">Pampmousses Mutants !</p>
+  </div>
+
+  <div id="content">    
+    <canvas id="canvas-dessin"></canvas>
+  </div>
+
+  <div id="infos">
+      <span id="niveau"></span>
+      <span id="points-de-vie" class="info"></span><span id="label-points-de-vie" class="label"></span>
+      <span id="munitions" class="info"></span><span id="label-munitions" class="label"></span>
+      <span id="score" class="info"></span><span id="label-score" class="label"></span>
+  </div>
+
+  <div id="debut-partie" class="bandeau">
+    <p>Pret a defendre la planete ? <input type="button" id="btnStart" value="Jouer !" /></p>
+  </div>
+
+  <div id="partie-perdue" class="bandeau">
+    <p>Game Over ! <input type="button" id="btnReStart" value="Reessayer !" /></p>
+  </div>
+
+  <div id="partie-gagnee" class="bandeau">
+    <p>Vous avez vaincu ! <input type="button" id="btnNextLevel" value="Niveau suivant !" /></p>
+  </div>
+
+  <img id="textureSol" src="img/sol.png" />
+  <img id="pampmousseTexture1" src="img/pampmousse1.png" />
+  <img id="pampmousseTexture2" src="img/pampmousse2.png" />
+  <img id="pampmousseTexture3" src="img/pampmousse3.png" />
+  <img id="pampmousseTexture4" src="img/pampmousse4.png" />
+  <img id="textureHumain" src="img/humain.png" />
+  <img id="textureHumainImmunise" src="img/humain-immunise.png" />
+  <img id="texturePresseAgrumes" src="img/presse-agrumes.png" />
+
+  <script src="js/libs/jquery.js" type="text/javascript"></script>
+  <script src="js/libs/math.js" type="text/javascript"></script>
+  <script src="js/patterns/observateur.js" type="text/javascript"></script>
+  <script src="js/patterns/sujet.js" type="text/javascript"></script>
+  <script src="js/patterns/collection.js" type="text/javascript"></script>
+  <script src="js/controlers/main.js" type="text/javascript"></script>
+  <script src="js/controlers/controleur.js" type="text/javascript"></script>
+  <script src="js/views/vue.js" type="text/javascript"></script>
+  <script src="js/models/point.js" type="text/javascript"></script>
+  <script src="js/models/textures.js" type="text/javascript"></script>
+  <script src="js/models/element-graphique.js" type="text/javascript"></script>
+  <script src="js/models/element-mobile.js" type="text/javascript"></script>
+  <script src="js/models/humain.js" type="text/javascript"></script>
+  <script src="js/models/pampmousse-mutant.js" type="text/javascript"></script>
+  <script src="js/models/munition.js" type="text/javascript"></script>
+  <script src="js/models/presse-agrumes.js" type="text/javascript"></script>
+  <script src="js/models/fabrique-element.js" type="text/javascript"></script>
+  <script src="js/models/elements-graphiques.js" type="text/javascript"></script>
+  <script src="js/models/jeu.js" type="text/javascript"></script>
+</body>
+</html>
